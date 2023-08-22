@@ -1,0 +1,5 @@
+     1	This is 1st LINE, Nov 18 18:55:50 WebHost NetworkManager[793]: <info>  [1668777950.3125] dhcp4 (ens33): state changed new lease, address=192.168.27.131
+     2	Nov 18 18:59:27 WebHost systemd[1846]: Started dbus-:1.2-org.gnome.Nautilus@1.service.
+     3	Nov 18 18:59:28 WebHost systemd[1]: Starting Hostname Service...
+     4	Nov 18 18:59:28 WebHost systemd[1]: Started Hostname Service.
+     5	Nov 18 18:59:32 WebHost systemd[1846]: Created slice Slice /app/dbus-:1.2-org.gnome.gedit.

@@ -6,7 +6,7 @@ pipeline{
         sh '''
         
         echo "Build is running on host `hostname`"
-        bash ${WORKSPACEn}/linux/scripting/shell/for.sh
+        bash ${WORKSPACE}/linux/scripting/shell/for.sh
 
         '''
       }

@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Stage 1') {
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh """
+                       echo "hellow `whoami
+                    """
+                }
+            }
+        }
+        
+        stage('Stage 2') {
+            steps {
+                sh """
+                  echo "done"
+                """
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+pipeline{
+agent any
+stages{
+stage('server details'){
+steps{
+
+sh '''
+
+echo "the server details are"`cat /etc/os-release`'
+echo "sucess you got the result"' 
+
+'''
+}
+}
+}
+} 
+

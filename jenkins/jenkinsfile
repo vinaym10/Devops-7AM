@@ -1,0 +1,16 @@
+
+pipeline{
+agent any
+stages{
+stage('build'){
+steps{
+sh '''
+echo "Build was sucess"
+bash ${WORKSPACE}/jenkins/shelltask1.sh
+
+'''
+}
+}
+}
+} 
+

@@ -1,0 +1,18 @@
+pipeline{
+
+agent any
+stages{
+stage('backup'){
+steps{
+
+sh '''
+
+echo "back is stored"
+cp -r /var/lib/jenkins/config.xml /root
+
+'''
+}
+}
+}
+}
+

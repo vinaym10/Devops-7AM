@@ -1,0 +1,26 @@
+pipeline{
+    agent none
+    stages{
+   stage('stage1') {
+  steps {
+    node('NODE 1') {
+      sh 'echo "hellow"' 
+    }
+  }
+   }
+   stage('stage2'){
+       steps{
+    node('NODE 1') {
+      sh 'echo "hellow stage2"' 
+    }
+  }
+}
+stage('stage6'){
+    steps{
+        node('NODE 2'){
+            sh 'echo "hellow stage6"'
+        }
+    }
+}
+}
+}
